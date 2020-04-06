@@ -3,62 +3,62 @@
 @rem *   Use all your CPU cores!   *
 @rem *******************************
 @rem
-@rem Чтобы не выводились кракозябры - в свойствах консоли поставить шрифт Lucida
+@rem Р§С‚РѕР±С‹ РЅРµ РІС‹РІРѕРґРёР»РёСЃСЊ РєСЂР°РєРѕР·СЏР±СЂС‹ - РІ СЃРІРѕР№СЃС‚РІР°С… РєРѕРЅСЃРѕР»Рё РїРѕСЃС‚Р°РІРёС‚СЊ С€СЂРёС„С‚ Lucida
 @rem Note
 @rem Source drive is d:
 @rem Destination drive is h:
 @echo off
 @chcp 1251 > nul
 
-echo Каталог1? (1 = да, any = нет):
+echo РљР°С‚Р°Р»РѕРі1? (1 = РґР°, any = РЅРµС‚):
 SET /p user_input_1=
-echo Каталог2? (1 = да, any = нет):
+echo РљР°С‚Р°Р»РѕРі2? (1 = РґР°, any = РЅРµС‚):
 SET /p user_input_2=
-echo Каталог3? (1 = да, any = нет):
+echo РљР°С‚Р°Р»РѕРі3? (1 = РґР°, any = РЅРµС‚):
 SET /p user_input_3=
 
 cd d:\
 
 IF %user_input_1% == 1 (
-IF EXIST h:\каталог1.rar. (
-IF EXIST h:\каталог1.rar-. (
-IF EXIST h:\каталог1.rar--. (
-del h:\каталог1.rar--
-rename h:\каталог1.rar- каталог1.rar--
-rename h:\каталог1.rar каталог1.rar-
-) ELSE rename h:\каталог1.rar- каталог1.rar--
-) ELSE rename h:\каталог1.rar каталог1.rar-
+IF EXIST h:\РєР°С‚Р°Р»РѕРі1.rar. (
+IF EXIST h:\РєР°С‚Р°Р»РѕРі1.rar-. (
+IF EXIST h:\РєР°С‚Р°Р»РѕРі1.rar--. (
+del h:\РєР°С‚Р°Р»РѕРі1.rar--
+rename h:\РєР°С‚Р°Р»РѕРі1.rar- РєР°С‚Р°Р»РѕРі1.rar--
+rename h:\РєР°С‚Р°Р»РѕРі1.rar РєР°С‚Р°Р»РѕРі1.rar-
+) ELSE rename h:\РєР°С‚Р°Р»РѕРі1.rar- РєР°С‚Р°Р»РѕРі1.rar--
+) ELSE rename h:\РєР°С‚Р°Р»РѕРі1.rar РєР°С‚Р°Р»РѕРі1.rar-
 )
-"c:\Program Files (x86)\WinRAR\Rar.exe" a -m2 -mt8 h:\каталог1.rar "d:\Каталог1"
-echo Каталог1... ok!
+"c:\Program Files (x86)\WinRAR\Rar.exe" a -m2 -mt8 h:\РєР°С‚Р°Р»РѕРі1.rar "d:\РљР°С‚Р°Р»РѕРі1"
+echo РљР°С‚Р°Р»РѕРі1... ok!
 )
 
 IF %user_input_2% == 1 (
-IF EXIST h:\каталог2.rar. (
-IF EXIST h:\каталог2.rar-. (
-IF EXIST h:\каталог2.rar--. (
-del h:\каталог2.rar--
-rename h:\каталог2.rar- каталог2.rar--
-rename h:\каталог2.rar каталог2.rar-
-) ELSE rename h:\каталог2.rar- каталог2.rar--
-) ELSE rename h:\каталог2.rar каталог2.rar-
+IF EXIST h:\РєР°С‚Р°Р»РѕРі2.rar. (
+IF EXIST h:\РєР°С‚Р°Р»РѕРі2.rar-. (
+IF EXIST h:\РєР°С‚Р°Р»РѕРі2.rar--. (
+del h:\РєР°С‚Р°Р»РѕРі2.rar--
+rename h:\РєР°С‚Р°Р»РѕРі2.rar- РєР°С‚Р°Р»РѕРі2.rar--
+rename h:\РєР°С‚Р°Р»РѕРі2.rar РєР°С‚Р°Р»РѕРі2.rar-
+) ELSE rename h:\РєР°С‚Р°Р»РѕРі2.rar- РєР°С‚Р°Р»РѕРі2.rar--
+) ELSE rename h:\РєР°С‚Р°Р»РѕРі2.rar РєР°С‚Р°Р»РѕРі2.rar-
 )
-"c:\Program Files (x86)\WinRAR\Rar.exe" a -m2 -mt8 h:\каталог2.rar "d:\Каталог2"
-echo Каталог2... ok!
+"c:\Program Files (x86)\WinRAR\Rar.exe" a -m2 -mt8 h:\РєР°С‚Р°Р»РѕРі2.rar "d:\РљР°С‚Р°Р»РѕРі2"
+echo РљР°С‚Р°Р»РѕРі2... ok!
 )
 
 IF %user_input_3% == 1 (
-IF EXIST h:\каталог3.rar. (
-IF EXIST h:\каталог3.rar-. (
-IF EXIST h:\каталог3.rar--. (
-del h:\каталог3.rar--
-rename h:\каталог3.rar- каталог3.rar--
-rename h:\каталог3.rar каталог3.rar-
-) ELSE rename h:\каталог3.rar- каталог3.rar--
-) ELSE rename h:\каталог3.rar каталог3.rar-
+IF EXIST h:\РєР°С‚Р°Р»РѕРі3.rar. (
+IF EXIST h:\РєР°С‚Р°Р»РѕРі3.rar-. (
+IF EXIST h:\РєР°С‚Р°Р»РѕРі3.rar--. (
+del h:\РєР°С‚Р°Р»РѕРі3.rar--
+rename h:\РєР°С‚Р°Р»РѕРі3.rar- РєР°С‚Р°Р»РѕРі3.rar--
+rename h:\РєР°С‚Р°Р»РѕРі3.rar РєР°С‚Р°Р»РѕРі3.rar-
+) ELSE rename h:\РєР°С‚Р°Р»РѕРі3.rar- РєР°С‚Р°Р»РѕРі3.rar--
+) ELSE rename h:\РєР°С‚Р°Р»РѕРі3.rar РєР°С‚Р°Р»РѕРі3.rar-
 )
-"c:\Program Files (x86)\WinRAR\Rar.exe" a -m2 -mt8 h:\каталог3.rar d:\Каталог3
-echo Каталог3... Ok!
+"c:\Program Files (x86)\WinRAR\Rar.exe" a -m2 -mt8 h:\РєР°С‚Р°Р»РѕРі3.rar d:\РљР°С‚Р°Р»РѕРі3
+echo РљР°С‚Р°Р»РѕРі3... Ok!
 )
 
 pause
